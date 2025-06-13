@@ -53,4 +53,14 @@ public class Employee {
     public int hashCode() {
         return Objects.hash(name, id, job, salary);
     }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "name='" + name + '\'' +
+                ", id=" + id +
+                ", job='" + job + '\'' +
+                ", salary=" + salary +
+                '}';
+    }
 }

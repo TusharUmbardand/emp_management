@@ -2,12 +2,14 @@ package com.ty.empm.dao;
 
 import com.ty.empm.entity.Employee;
 
+import java.sql.SQLException;
+
 public interface EmployeeDAO {
 
-    public boolean addEmp(Employee employee);
+    public void addEmp(Employee employee) throws SQLException;
     public Employee getEmpById(int id);
-    public void updateEmpSalary(int id , double salary);
-    public boolean deleteEmpById(int id);
+
+    public boolean deleteEmpById(int id) throws SQLException;
 
 
 
